@@ -1,0 +1,56 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-white p-4 sticky-top" id="navbar">
+    <div class="container">
+        <a class="navbar-brand" href="#">Chrysiris Fleurs</a>
+        <a href="https://www.bertille-de-almeida.com"><img class="logo" src="images/logo_b.webp" alt="logo"
+                title="logo"></a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
+            aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item active rounded-circle">
+                    <a class="nav-link" href="#accueil">Accueil</a>
+                </li>
+                <li class="nav-item rounded-circle" onclick="changeHref('#');">
+                    <a class="nav-link" href="#mes-services">Galerie</a>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        Nos produits
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                        <li><a class="dropdown-item" href="#">Bouquets de fleurs</a></li>
+                        <li><a class="dropdown-item" href="#">Compositions florales</a></li>
+                        <li><a class="dropdown-item" href="#">Évènements</a></li>
+                        <li><a class="dropdown-item" href="#">Plantes</a></li>
+                    </ul>
+                <li class="nav-item rounded-circle">
+                    <a class="nav-link" href="#tarifs">À propos</a>
+                </li>
+                <li class="nav-item contact-icone rounded-circle">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+                {% if app.user %}
+                <li class="nav-item rounded-circle">
+                    <a class="nav-link" href="{{ path('app_logout') }}">Mon compte</a>
+                </li>
+                <li class="nav-item rounded-circle">
+                    <a class="nav-link" href="{{ path('app_logout') }}">Me deconnecter</a>
+                </li>
+                {% else %}
+                <li class="nav-item rounded-circle">
+                    <a class="nav-link" href="{{ path('app_register') }}">M'inscrire</a>
+                </li>
+                <li class="nav-item rounded-circle">
+                    <a class="nav-link" href="{{ path('app_login') }}">Me connecter</a>
+                </li>
+                {% endif %}
+
+            </ul>
+        </div>
+    </div>
+</nav>

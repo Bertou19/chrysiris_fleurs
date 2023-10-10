@@ -1,0 +1,15 @@
+{
+  "name": "chrysiris_fleurs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html.twig",
+  "directories": {
+    "devDependencies": "scripts"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "sass": "sass --watch public/assets/css/style.scss:public/assets/css/style.css"
+  },
+  "author": "",
+  "license": "ISC"
+}
