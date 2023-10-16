@@ -2000,6 +2000,101 @@
   background-size: 0.5rem 100%;
 }
 
+.swatch-oxford {
+  color: #fff;
+  background-color: #0a2342;
+}
+.swatch-oxford::after {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  padding-left: 1rem;
+  font-size: 0.75rem;
+  line-height: 1.35;
+  white-space: pre;
+  content: "15.7" "\a" "15.7" "\a" "1.33";
+  background-color: #0a2342;
+  background-image: linear-gradient(to bottom, transparent 0.25rem, #fff 0.25rem 0.75rem, transparent 0.75rem 1.25rem, #fff 1.25rem 1.75rem, transparent 1.75rem 2.25rem, #000 2.25rem 2.75rem, transparent 2.75rem);
+  background-repeat: no-repeat;
+  background-size: 0.5rem 100%;
+}
+
+.swatch-zomp {
+  color: #000;
+  background-color: #2ca58d;
+}
+.swatch-zomp::after {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  padding-left: 1rem;
+  font-size: 0.75rem;
+  line-height: 1.35;
+  white-space: pre;
+  content: "6.87" "\a" "3.05" "\a" "6.87";
+  background-color: #2ca58d;
+  background-image: linear-gradient(to bottom, transparent 0.25rem, #000 0.25rem 0.75rem, transparent 0.75rem 1.25rem, #fff 1.25rem 1.75rem, transparent 1.75rem 2.25rem, #000 2.25rem 2.75rem, transparent 2.75rem);
+  background-repeat: no-repeat;
+  background-size: 0.5rem 100%;
+}
+
+.swatch-cambridge {
+  color: #000;
+  background-color: #84bc9c;
+}
+.swatch-cambridge::after {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  padding-left: 1rem;
+  font-size: 0.75rem;
+  line-height: 1.35;
+  white-space: pre;
+  content: "9.65" "\a" "2.17" "\a" "9.65";
+  background-color: #84bc9c;
+  background-image: linear-gradient(to bottom, transparent 0.25rem, #000 0.25rem 0.75rem, transparent 0.75rem 1.25rem, #fff 1.25rem 1.75rem, transparent 1.75rem 2.25rem, #000 2.25rem 2.75rem, transparent 2.75rem);
+  background-repeat: no-repeat;
+  background-size: 0.5rem 100%;
+}
+
+.swatch-baby {
+  color: #000;
+  background-color: #fffdf7;
+}
+.swatch-baby::after {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  padding-left: 1rem;
+  font-size: 0.75rem;
+  line-height: 1.35;
+  white-space: pre;
+  content: "20.6" "\a" "1.01" "\a" "20.6";
+  background-color: #fffdf7;
+  background-image: linear-gradient(to bottom, transparent 0.25rem, #000 0.25rem 0.75rem, transparent 0.75rem 1.25rem, #fff 1.25rem 1.75rem, transparent 1.75rem 2.25rem, #000 2.25rem 2.75rem, transparent 2.75rem);
+  background-repeat: no-repeat;
+  background-size: 0.5rem 100%;
+}
+
+.swatch-cyclamen {
+  color: #000;
+  background-color: #f46197;
+}
+.swatch-cyclamen::after {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  padding-left: 1rem;
+  font-size: 0.75rem;
+  line-height: 1.35;
+  white-space: pre;
+  content: "7.00" "\a" "2.99" "\a" "7.00";
+  background-color: #f46197;
+  background-image: linear-gradient(to bottom, transparent 0.25rem, #000 0.25rem 0.75rem, transparent 0.75rem 1.25rem, #fff 1.25rem 1.75rem, transparent 1.75rem 2.25rem, #000 2.25rem 2.75rem, transparent 2.75rem);
+  background-repeat: no-repeat;
+  background-size: 0.5rem 100%;
+}
+
 .swatch-gray-500 {
   color: #000;
   background-color: #adb5bd;

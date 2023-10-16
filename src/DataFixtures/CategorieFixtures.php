@@ -11,11 +11,19 @@ class CategorieFixtures extends Fixture
 {
     public function load(ObjectManager $manager): void
     {
-         $categorie = new Categorie();
-        $categorie->setName('Bouquets');
-        $categorie->setSlug('bouquets');
-          $categorie->persist($categorie);
+         $parent_id = new Categorie();
+         $parent_id->setNom('Bouquets');
+         $parent_id->setSlug('bouquets');
+        $manager->persist($parent_id);
 
+        
+        $categorie = new Categorie();
+        $categorie->setNom('Mariage');
+        $categorie->setSlug('mariage');
+        $categorie->setParent($parent_id);
+        $manager->persist($categorie);
+        
+        
         $manager->flush();
     }
 }

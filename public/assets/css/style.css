@@ -1,19 +1,62 @@
+@font-face {
+  font-family: "Bree";
+  src: url("../fonts/BreeSerif-Regular.ttf");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Rubik";
+  src: url("../fonts/Rubik-VariableFont_wght.ttf");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Sacramento";
+  src: url("../fonts/Sacramento-Regular.ttf");
+  font-display: swap;
+}
+.navbar-brand {
+  font-family: Sacramento;
+  font-size: 50px;
+}
+
+.navbar-brand:hover {
+  color: #84bc9c !important;
+}
+
+.nav-link,
+.list-inline-item,
+legend {
+  font-family: Rubik;
+}
+
 .text {
-  font-family: "Arial", cursive;
+  font-family: Sacramento, cursive;
   font-size: 60px;
   margin: 10px 50px;
   letter-spacing: 6px;
   font-weight: bold;
   text-align: center;
+  position: absolute;
 }
 
-.img-header {
-  background-image: url("../images/creafleurs.jpeg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  text-align: center;
+.text:hover {
+  color: #84bc9c !important;
+}
+
+.background {
+  width: 100%;
+  height: 600px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+.home {
+  top: 400px;
+  width: 100%;
+  position: absolute;
+  display: block;
+  margin: auto;
 }
 
 .img {
@@ -22,6 +65,22 @@
 
 .horaires {
   background-color: #84bc9c;
+}
+
+.form-control:focus {
+  border-color: #84bc9c !important;
+  box-shadow: 0.5rem 5px 5px #84bc9c !important;
+}
+
+.connexion,
+.btn,
+.inscription-form {
+  font-family: Bree;
+  color: #84bc9c;
+}
+
+.horaires {
+  font-family: Bree;
 }
 
 .footer-basic {
