@@ -2,7 +2,6 @@
 
 namespace App\Entity;
 
-use App\Entity\Trait\SlugTrait;
 use App\Repository\CategorieRepository;
 use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\Common\Collections\Collection;
@@ -11,10 +10,10 @@ use Doctrine\ORM\Mapping as ORM;
 #[ORM\Entity(repositoryClass: CategorieRepository::class)]
 class Categorie
 {
-    use SlugTrait;
-    
+   
     #[ORM\Id]
     #[ORM\GeneratedValue]
+    
     #[ORM\Column]
     private ?int $id = null;
 
@@ -22,8 +21,11 @@ class Categorie
     private ?string $nom = null;
 
     #[ORM\ManyToOne(targetEntity: self::class, inversedBy: 'categories')]
+     #[ORM\JoinColumn(onDelete: 'CASCADE')]
     private ?self $parent = null;
 
+   
+     
     #[ORM\OneToMany(mappedBy: 'parent', targetEntity: self::class)]
     private Collection $categories;
 

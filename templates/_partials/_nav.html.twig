@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-white p-4 sticky-top" id="navbar">
     <div class="container">
-        <a class="navbar-brand" href="#">Chrysiris Fleurs</a>
+        <a class="navbar-brand" href="{{ path('app_main') }}">Chrysiris Fleurs</a>
         {# <a href="https://www.bertille-de-almeida.com"><img class="logo" src="" alt="logo" title="logo"></a> #}
 
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
@@ -10,7 +10,7 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav ms-auto">
                 <li class="nav-item active rounded-circle">
-                    <a class="nav-link" href="#accueil">Accueil</a>
+                    <a class="nav-link" href="{{ path('app_main') }}">Accueil</a>
                 </li>
                 <li class="nav-item rounded-circle" onclick="changeHref('#');">
                     <a class="nav-link" href="#mes-services">Galerie</a>
@@ -31,7 +31,7 @@
                     <a class="nav-link" href="#tarifs">À propos</a>
                 </li>
                 <li class="nav-item contact-icone rounded-circle">
-                    <a class="nav-link" href="#contact">Contact</a>
+                    <a class="nav-link" href="{{ path('app_contact') }}">Contact</a>
                 </li>
                 {% if app.user %}
                 <li class="nav-item rounded-circle">

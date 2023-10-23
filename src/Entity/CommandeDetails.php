@@ -26,6 +26,9 @@ class CommandeDetails
     #[ORM\JoinColumn(nullable: false)]
     private ?produit $produit = null;
 
+    #[ORM\Column]
+    private ?int $id = null;
+
    
 
     public function getQuantity(): ?int
@@ -72,6 +75,18 @@ class CommandeDetails
     public function setProduit(?produit $produit): static
     {
         $this->produit = $produit;
+
+        return $this;
+    }
+
+    public function getId(): ?int
+    {
+        return $this->id;
+    }
+
+    public function setId(int $id): static
+    {
+        $this->id = $id;
 
         return $this;
     }

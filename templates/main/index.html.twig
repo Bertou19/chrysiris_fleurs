@@ -4,54 +4,87 @@
 
 {% block body %}
 
-
-
 <section>
-    <div>
-        <img class="background" src="assets/images/creafleurs.jpeg" alt="legumes">
-        <div class="home text-sm-center text-xs-center text-center">
-            <span class="text mt-5 text-baby text-center">
-                <span id="typedtext" class="reveal-3 text-center">
-                </span>
-            </span>
-
-            <a href="contact.php" class="btn btn-cyclamen">Nous contacter</a>
+    <div class="container">
+        <div class="row justify-content-center">
+            <img class="background" src="assets/images/magasin_fleurs.jpeg" alt="photo de boutique">
+            <div class="home text-sm-center text-xs-center text-lg-center">
+                <div class="text mt-5 text-baby text-center">
+                    <div id="typedtext" class="reveal-3 text-center">
+                    </div>
+                    <a href="{{ path('app_contact') }}" class="btn btn-header btn-baby text-center">Nous
+                        contacter</a>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+            </div>
         </div>
     </div>
 </section>
 
-
-
-
-
-
-<div class="container-fluid">
-    <div class="row">
-        <div class="col-xs-12 col-md-12 col-lg-6 col-xl-12">
-            <div class="rounded img-header mt-5">
-                <img class="img opacity-100" src="assets/images/creafleurs.jpeg" alt="">
-            </div>
-        </div>
-
-        <div class="col-xs-12 col-md-12 col-lg-6 col-xl-12">
-            <div class="text mt-5 text-baby">
-                <div id="typedtext" class="reveal-3"></div>
-            </div>
-
-        </div>
-    </div>
-
-</div>
+<div class="ligne"></div>
 
 
 <section>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-sm-8 col-md-12 col-lg-6 item">
+                <div class="accroche-accueil p-5 mt-5">
+                    <h1 class="title-section mb-5">Votre fleuriste de proximité</h1>
 
-    <div class="horaires p-5">
-        <h1>Nos horaires d'ouverture</h1>
+                    <p> Vous cherchez à offrir ou à vous faire plaisir avec des fleurs fraîches et de qualité?
+                        Venez découvrir Chrysiris, votre fleuriste de proximité situé au cœur de la ville.
 
+                    <p> Chez nous, vous trouverez un large choix de bouquets, compositions florales, plantes vertes et
+                        fleuries,
+                        pour tous les goûts et tous les budgets.</p>
+                    <p> Que ce soit pour un anniversaire, une naissance, un mariage, un deuil, ou simplement pour le
+                        plaisir,
+                        nous saurons vous conseiller et vous accompagner dans votre choix.</p>
 
+                    <p> Nous vous proposons également
+                        un service
+                        de livraison à domicile
+                        ou sur le lieu de votre choix, dans un rayon de 20 km autour de la boutique.</p>
+                    <p> N'hésitez pas à nous contacter pour obtenir un devis personnalisé.</p>
+                    <p> La Boutique des
+                        Fleurs, c’est
+                        plus qu’un fleuriste,
+                        c’est un artisan passionné par son métier et à votre écoute.</p>
+                </div>
 
+            </div>
+            <div class="col-sm-8 col-md-12 col-lg-6 item">
+                <img class="img mt-8 border-end border-bottom border-4 border-cyclamen"
+                    src="assets/images/creafleurs.jpeg" alt="fleurs">
+            </div>
+        </div>
     </div>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-3">
+                <a href="{{ path('app_contact') }}"
+                    class="btn btn-devis btn-cyclamen text-baby btn-lg mb-8 mt-5">Obtenir un devis
+                    personnalisé</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section>
+    <div class="container mt-4">
+        <div class="row justify-content-center">
+            <div class="col-lg-3">
+                <div class="horaires p-5">
+                    <h1 class="text-baby">Nos horaires d'ouverture</h1>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+
 </section>
 
 

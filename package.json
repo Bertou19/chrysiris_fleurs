@@ -6,10 +6,12 @@
   "directories": {
     "devDependencies": "scripts"
   },
-  "devDependencies": {},
   "scripts": {
     "sass": "sass --watch public/assets/css/style.scss:public/assets/css/style.css"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "vue": "^3.3.4"
+  }
 }

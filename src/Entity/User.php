@@ -45,14 +45,12 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
     #[ORM\Column(length: 255)]
     private ?string $ville = null;
 
-    #[ORM\Column(length: 255)]
+    #[ORM\Column(length: 5)]
     private ?string $zipcode = null;
 
-    #[ORM\Column(length: 255)]
+    #[ORM\Column(length: 15)]
     private ?string $telephone = null;
 
-    #[ORM\Column(length: 255)]
-    private ?string $role = null;
 
     #[ORM\OneToMany(mappedBy: 'user', targetEntity: Commande::class)]
     private Collection $commandes;
@@ -208,17 +206,7 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
         return $this;
     }
 
-    public function getRole(): ?string
-    {
-        return $this->role;
-    }
-
-    public function setRole(string $role): static
-    {
-        $this->role = $role;
-
-        return $this;
-    }
+  
 
     /**
      * @return Collection<int, Commande>
