@@ -2,15 +2,17 @@
 
 namespace App\Entity;
 
+
 use App\Repository\CommandeDetailsRepository;
 use Doctrine\ORM\Mapping as ORM;
+
+
 
 #[ORM\Entity(repositoryClass: CommandeDetailsRepository::class)]
 class CommandeDetails
 {
   
-
-    #[ORM\Column]
+#[ORM\Column]
     private ?int $quantity = null;
 
     #[ORM\Column]
@@ -26,12 +28,8 @@ class CommandeDetails
     #[ORM\JoinColumn(nullable: false)]
     private ?produit $produit = null;
 
-    #[ORM\Column]
-    private ?int $id = null;
-
    
-
-    public function getQuantity(): ?int
+public function getQuantity(): ?int
     {
         return $this->quantity;
     }
@@ -75,18 +73,6 @@ class CommandeDetails
     public function setProduit(?produit $produit): static
     {
         $this->produit = $produit;
-
-        return $this;
-    }
-
-    public function getId(): ?int
-    {
-        return $this->id;
-    }
-
-    public function setId(int $id): static
-    {
-        $this->id = $id;
 
         return $this;
     }

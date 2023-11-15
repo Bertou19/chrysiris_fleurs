@@ -1,0 +1,27 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+<main class="container">
+    <section class="row">
+
+        <div class="col-12">
+            <h1>Liste des produits {{categorie.nom}}</h1>
+        </div>
+        {% for produit in produits %}
+        <div class="col-4">
+            <div class="card h-100 text-center mx-auto" style="width: 15rem;">
+                <img src="assets/images/plante.jpeg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title title-section text-center">{{produit.nom}}</h5>
+                    <p class="card-text">{{produit.description}}</p>
+                    <a href="{{ path('produit_details', {'nom': produit.nom}) }}"
+                        class="btn btn-cambridge text-white">Voir les
+                        détails</a>
+                </div>
+            </div>
+
+        </div>
+        {% endfor %}
+    </section>
+</main>
+{% endblock %}

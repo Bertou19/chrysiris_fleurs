@@ -1,7 +1,5 @@
 {% extends 'base.html.twig' %}
 
-
-
 {% block body %}
 
 <section>
@@ -23,6 +21,38 @@
 </section>
 
 <div class="ligne"></div>
+<section>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12">
+            </div>
+            {% for categorie in categorie %}
+            {% if categorie.parent == null %}
+            <div class="col-6">
+                <h2> {{categorie.nom}}</h2>
+            </div>
+            {% else %}
+
+            <div class="col-4">
+                <div class="card h-100 text-center mx-auto" style="width: 15rem;">
+                    <img src="assets/images/plante.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title title-section text-center">{{categorie.nom}}</h5>
+                        <a href="{{path('categorie_list',{nom: categorie.nom})}}"
+                            class="btn btn-cambridge text-white center-block">Voir les produits</a>
+                    </div>
+                </div>
+            </div>
+
+            {% endif %}
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+
+
+
 
 
 <section>

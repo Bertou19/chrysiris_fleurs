@@ -95,6 +95,12 @@ section {
   background-color: #84bc9c;
 }
 
+.title-card {
+  font-family: Bree;
+  font-size: 30px;
+  color: #84bc9c;
+}
+
 .form-control:focus {
   border-color: #84bc9c !important;
   box-shadow: 0.5rem 5px 5px #84bc9c !important;

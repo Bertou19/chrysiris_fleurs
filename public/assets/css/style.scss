@@ -82,9 +82,9 @@ legend {
 
 section {
   border-top: lightgray 1px solid;
-
   margin: 70px;
 }
+
 @media (max-width: 767px) {
   .img {
     height: 50%;
@@ -108,6 +108,13 @@ section {
 .horaires {
   background-color: #84bc9c;
 }
+
+.title-card {
+  font-family: Bree;
+  font-size: 30px;
+  color: #84bc9c;
+}
+
 //FORMS//
 .form-control:focus {
   border-color: #84bc9c !important;

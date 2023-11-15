@@ -30,7 +30,8 @@ class Produit
     #[ORM\ManyToOne(inversedBy: 'produits')]
     private ?Categorie $id_categorie = null;
 
-    #[ORM\OneToMany(mappedBy: 'produits', targetEntity: Images::class)]
+    #[ORM\OneToMany(mappedBy: 'produits', targetEntity: Images::class,
+    cascade:['persist'])]
     private Collection $images;
 
     #[ORM\OneToMany(mappedBy: 'produit', targetEntity: CommandeDetails::class)]
@@ -40,9 +41,7 @@ class Produit
     {
         $this->commandeDetails = new ArrayCollection();
     }
-
-
-    public function getId(): ?int
+public function getId(): ?int
     {
         return $this->id;
     }

@@ -1,0 +1,22 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Détails des produits{% endblock %}
+
+{% block body %}
+<main class="container">
+    <section class="row">
+        <div class="col-12">
+            <h1> {{ produit.nom }}</h1>
+        </div>
+        <div class="col-6">
+            {% for image in produit.images %}
+            <img src="{{ asset('assets/uploads/') ~ image.nom}}" class="d-block w-100" alt="produit.nom">
+            {% endfor %}
+        </div>
+        <div class="col-6">
+            <p>{{produit.description}}</p>
+            <p>Prix : {{produit.prix /100 }}€</p>
+        </div>
+    </section>
+</main>
+{% endblock %}

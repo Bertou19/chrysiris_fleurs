@@ -20,13 +20,15 @@ class Categorie
     #[ORM\Column(length: 255)]
     private ?string $nom = null;
 
+    #[ORM\Column]
+    private ?int $categorieOrder = null;
+
     #[ORM\ManyToOne(targetEntity: self::class, inversedBy: 'categories')]
      #[ORM\JoinColumn(onDelete: 'CASCADE')]
     private ?self $parent = null;
 
    
-     
-    #[ORM\OneToMany(mappedBy: 'parent', targetEntity: self::class)]
+     #[ORM\OneToMany(mappedBy: 'parent', targetEntity: self::class)]
     private Collection $categories;
 
     #[ORM\OneToMany(mappedBy: 'id_categorie', targetEntity: Produit::class)]
@@ -55,6 +57,18 @@ class Categorie
         return $this;
     }
 
+    public function getCategorieOrder():?int
+{
+    return $this->categorieOrder;
+
+}
+    public function setCategorieOrder(?int $categorieOrder):self
+    {
+        $this->categorieOrder = $categorieOrder;
+    return $this;
+    }
+    
+    
     public function getParent(): ?self
     {
         return $this->parent;

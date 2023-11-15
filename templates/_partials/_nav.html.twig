@@ -13,7 +13,7 @@
                     <a class="nav-link" href="{{ path('app_main') }}">Accueil</a>
                 </li>
                 <li class="nav-item rounded-circle" onclick="changeHref('#');">
-                    <a class="nav-link" href="#mes-services">Galerie</a>
+                    <a class="nav-link" href="{{ path('app_galerie') }}">Galerie</a>
                 </li>
 
                 <li class="nav-item dropdown">
@@ -21,12 +21,19 @@
                         data-bs-toggle="dropdown" aria-expanded="false">
                         Nos produits
                     </a>
+
                     <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
-                        <li><a class="dropdown-item" href="#">Bouquets de fleurs</a></li>
-                        <li><a class="dropdown-item" href="#">Compositions florales</a></li>
+
+                        <li><a class="dropdown-item" href="#">Bouquets de
+                                fleurs</a></li>
+
+                        <li><a class="dropdown-item" href="#">Compositions
+                                florales</a></li>
                         <li><a class="dropdown-item" href="#">Évènements</a></li>
-                        <li><a class="dropdown-item" href="#">Plantes</a></li>
+                        <li><a class="dropdown-item" href="#">Plantes</a>
+                        </li>
                     </ul>
+
                 <li class="nav-item rounded-circle">
                     <a class="nav-link" href="#tarifs">À propos</a>
                 </li>
